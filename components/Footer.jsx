@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Footer = () => {
@@ -6,17 +7,19 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 px-4">
         {/* Logo and Quote */}
         <div>
-          <div className="flex items-center space-x-2">
-            <img
-              src="/e72e6d3782262b6707712334b8111b69.png"
-              alt="Jade Reforestry Logo"
-              className="h-12"
-            />
-            <span className="font-bold text-lg">JADE REFORESTRY</span>
-          </div>
+          {/* Logo */}
+                  <div className="flex items-center space-x-3">
+                    <Image
+                      height={250}
+                      width={250}
+                      src="/e72e6d3782262b6707712334b8111b69.png"
+                      alt="Jade Reforestry"
+                      className="h-50 w-50"
+                    />
+                  </div>
           <p className="mt-4 text-sm">
-            "De beste tijd om een boom te planten was 20 jaar geleden. De op één
-            na beste tijd is nu."
+            De beste tijd om een boom te planten was 20 jaar geleden. De op één
+            na beste tijd is nu.
           </p>
         </div>
 
